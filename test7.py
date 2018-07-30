@@ -35,3 +35,4 @@ def analyseSex(firends):
 plt.legend(loc='upper right',)
 plt.title(u'%s的微信好友性别组成' % friends[0]['NickName'])
 plt.show()
+plt.legend()
