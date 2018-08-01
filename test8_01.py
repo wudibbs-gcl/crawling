@@ -48,10 +48,16 @@ title_tag = head_tag.contents[0]
 # print(title_tag.string)
 
 # 输出的字符串可能包含很多空格或空行，使用.stripped_strings可以去除多余空白
-# 全部是空格的行会被忽略掉,段首和段末的空白会被删除
-for string in soup.stripped_strings:
-	# print(string.replace('\t','').replace('\n','').replace('\r',''))
-	print(string)
+# # 全部是空格的行会被忽略掉,段首和段末的空白会被删除
+# for string in soup.stripped_strings:
+# 	# print(string.replace('\t','').replace('\n','').replace('\r',''))
+# 	print(string)
 	# print(''.join(string.split("\t|\n|\r")))
 
 
+import re
+for tag in soup.find_all(re.compile("^b")):
+	print(tag)
+	print("-------------")
+	print(tag.name)
+	print("-------------")
