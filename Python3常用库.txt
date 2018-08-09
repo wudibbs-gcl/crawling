@@ -1,0 +1,54 @@
+# 解析请求
+bs4:	python3自带的解析库，将html解析为正确的格式
+lxml:	lxml是python的一个解析库，支持HTML和XML的解析，支持XPath解析方式，而且解析效率非常高
+
+
+# http请求方法库，一般配合bs4/xml之类的库使用
+urllib：自带库，Python2中使用urllib2
+requests：第三方库，基于urllib编写
+urlparse:解析url地址
+
+# 自然语言处理
+nltk：自然语言处理
+
+# 操作系统
+sys：	python运行环境的变量和函数
+os:	文件系统操作库
+re:正则表达式
+
+# 数据库相关
+MongoDB/Redis:
+Oracle/Mysql:
+sqlalchemy：数据库连接池
+
+
+# web框架
+django:WEB framework
+py2exe：用来生成windows可执行文件
+
+
+# 图形处理
+PIL: pip install pillow,图片处理
+matplotlib：绘图
+
+
+# Excel文件读，写
+xlrd，xlwt,CSV：读，写Excel，CSV
+
+
+# 数据分析处理库
+numpy： 科学计算库
+pandas:	用pandas封装函数对数据进行读取，预处理，数据分析等操作。 基于numpy库编写
+
+
+
+
+
+
+
+
+
+
+
+
+

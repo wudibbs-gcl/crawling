@@ -20,16 +20,11 @@ with open('test.txt','r') as f:
 book = xlwt.Workbook()
 sheet = book.add_sheet('sheet1')
 row = 0
+col = 0
 for index,values in enumerate(strs):
-	if index+1 % 5 != 0:
+	sheet.write(row,col,values)
+	col += 1
 		
-		sheet.write(row,col,values)
-		col += 1
-	else:
-		row += 1
-		col = 0
-		sheet.write(row,col,values)
-		col += 1
 	
 
 book.save('txtWriteExcel.xls')

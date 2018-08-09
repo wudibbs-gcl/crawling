@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "sysTest.py", line 63, in <module>
+    print >>sys.stderr,"wrong log"
+TypeError: unsupported operand type(s) for >>: 'builtin_function_or_method' and '_io.TextIOWrapper'. Did you mean "print(<message>, file=<output_stream>)"?
+Traceback (most recent call last):
+  File "sysTest.py", line 63, in <module>
+    print (sys.stderr(),"wrong log")
+TypeError: '_io.TextIOWrapper' object is not callable
